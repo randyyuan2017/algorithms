@@ -1,9 +1,6 @@
 from copy import deepcopy
 r,c,n=map(int,input().split())
 
-full_map = []
-for _ in range(r):
-    full_map.append(["O" for _ in range(c)])
     
 def generate_new_map(old_map):
     new_map = deepcopy(full_map)
@@ -20,6 +17,9 @@ def generate_new_map(old_map):
 initial_map = []
 for _ in range(r):
     initial_map.append(list(str(input())))
+full_map = []
+for _ in range(r):
+    full_map.append(["O" for _ in range(c)])
 time=[[] for _ in range(6)]
 time[0]=time[1]=initial_map
 time[2]=time[4]=full_map
