@@ -33,6 +33,7 @@ else:
         num[half_length]=9
     print("".join(map(str,num)))
 
+# https://www.hackerrank.com/challenges/richie-rich
 # complete version.  
 # 3 places I struggled the most were:  
 # 1: when replacing numbers with 9s to maximize, I didn't count the 9s at the end of the number  
